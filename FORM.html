@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Night Out</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #111, #333);
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 2em;
+      margin-top: 0;
+      color: #ffcc00;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    .button {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 15px 30px;
+      background-color: #ffcc00;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+    .section {
+      margin-top: 30px;
+    }
+    form {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: left;
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    input[type="submit"] {
+      background: #ffcc00;
+      color: black;
+      font-weight: bold;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Welcome to the Ultimate Night Out 🎉</h1>
+  <h2>✨ A Night You Won’t Forget ✨</h2>
+
+  <div class="section">
+    <p>🗓 <strong>Date:</strong> Thursday, May 2, 2025</p>
+    <p>🕘 <strong>Time:</strong> 21:00 till late</p>
+    <p>📍 <strong>Location:</strong> Secret Rooftop in Tel Aviv (revealed after payment!)</p>
+  </div>
+
+  <div class="section">
+    <h2>🎵 What’s Waiting for You?</h2>
+    <p>- Top DJ sets</p>
+    <p>- Open bar 🍻</p>
+    <p>- Crazy vibes</p>
+    <p>- Chill zone</p>
+    <p>- Surprise guest 👀</p>
+  </div>
+
+  <div class="section">
+    <h2>🎟️ Ticket Price: 60₪ per person</h2>
+    <p>💳 <strong>Pay via:</strong></p>
+    <p>BIT: <a href="https://bit.ly/payparty" target="_blank">bit.ly/payparty</a></p>
+    <p>PayBox: <a href="https://payboxapp.page.link/example" target="_blank">payboxapp.page.link/example</a></p>
+    <p>Or bring <strong>cash</strong> to the entrance 🎫</p>
+  </div>
+
+  <div class="section">
+    <h2>✅ Confirm your spot</h2>
+    <form action="mailto:yourmail@example.com" method="POST" enctype="text/plain">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="payment">Payment Method:</label>
+      <select id="payment" name="Payment Method">
+        <option value="BIT">BIT</option>
+        <option value="PayBox">PayBox</option>
+        <option value="Cash">Cash</option>
+      </select>
+
+      <label for="notes">Anything else?</label>
+      <textarea id="notes" name="Notes"></textarea>
+
+      <input type="submit" value="Confirm Attendance">
+    </form>
+  </div>
+
+  <div class="section">
+    <p>🔥 Limited spots only – Don’t miss out!</p>
+    <p>📲 Invite your friends. Dress to impress. Let’s dance like there’s no tomorrow.</p>
+  </div>
+</body>
+</html>
