@@ -3,86 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <title>הזמנה</title>
-  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Cinzel&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Cinzel&display=swap&family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
       padding: 0;
       font-family: 'Assistant', sans-serif;
       direction: rtl;
-      text-align: center;
-      color: #1a1a1a;
       background-color: #ffffff;
-    }
-
-    .header-image {
-      background-image: url('background.jpg'); /* תחליף בשם הקובץ או קישור */
-      background-size: contain;  /* לא חותך את התמונה */
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 400px;  /* גובה סביר */
       width: 100%;
     }
 
-    .invite {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 40px 20px;
+    .container {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      text-align: center;
     }
 
-    .time {
+    .header-image img {
+      width: 100vw;
+      height: auto;
+      display: block;
+    }
+
+    .header-text {
+      margin-top: 10px;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .header-sub {
       font-size: 18px;
-      font-weight: 300;
+      letter-spacing: 3px;
     }
 
-    .time span {
-      font-weight: 400;
+    .invite {
+      margin-top: 40px;
+      padding: 0 10px;
+    }
+
+    .invite p, .invite h1 {
+      margin: 20px 0;
     }
 
     .title {
       font-family: 'Cinzel', serif;
-      font-size: 64px;
-      margin: 30px 0 10px;
+      font-size: 48px;
     }
 
-    .location {
-      font-size: 16px;
-      margin-bottom: 50px;
-    }
-
-    .after-party {
-      font-family: 'Cinzel', serif;
+    .after-party, .end, .price, .time, .location {
       font-size: 20px;
-      margin-bottom: 40px;
-    }
-
-    .after-party span {
-      display: block;
-      font-size: 22px;
-      margin-top: 10px;
-    }
-
-    .end {
-      font-size: 18px;
-      margin-bottom: 40px;
-      line-height: 1.8;
     }
 
     .end span {
-      font-weight: 700;
-    }
-
-    .price {
-      font-size: 20px;
-      font-weight: 500;
-      margin-bottom: 30px;
+      font-weight: bold;
     }
 
     .buttons {
       display: flex;
-      justify-content: center;
       gap: 20px;
-      margin-bottom: 60px;
+      justify-content: center;
+      margin: 40px 0;
       flex-wrap: wrap;
     }
 
@@ -90,9 +76,9 @@
       background-color: #333;
       color: white;
       border: none;
-      padding: 12px 24px;
-      border-radius: 30px;
-      font-size: 16px;
+      padding: 14px 28px;
+      border-radius: 40px;
+      font-size: 18px;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
@@ -104,27 +90,52 @@
     .footer {
       font-size: 14px;
       color: #666;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 36px;
+      }
+
+      .after-party, .end, .price, .time, .location {
+        font-size: 18px;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .buttons button {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="header-image"></div>
-
-  <div class="invite">
-    <p class="time">21:00 <span>פתיחת דלתות</span></p>
-    <h1 class="title">“PAROS”</h1>
-    <p class="location">מתחם אירועים, ראשון לציון</p>
-    <p class="after-party">AFTER PARTY<br><span>00:00</span></p>
-    <p class="end">03:00 - <span>סיום האירוע</span><br>הסעה מהמתחם</p>
-    <p class="price">עלות ₪600</p>
-
-    <!-- כפתורים -->
-    <div class="buttons">
-      <button>קניית כרטיס</button>
-      <button>יצירת קשר</button>
+  <div class="container">
+    <div class="header-image">
+      <img src="background.jpg" alt="Save the Date">
+    </div>
+    <div class="header-text">
+      <p class="header-sub">ZEITLIN PROM<br>02.07.2025</p>
     </div>
 
-    <p class="footer">adelzaurov09@gmail.com “אדל הפקות” זכויות יוצרים של</p>
+    <div class="invite">
+      <p class="time">21:00 פתיחת דלתות</p>
+      <h1 class="title">“PAROS”</h1>
+      <p class="location">מתחם אירועים, ראשון לציון</p>
+      <p class="after-party">AFTER PARTY<br>00:00</p>
+      <p class="end"><span>03:00 - סיום האירוע</span><br>הסעה מהמתחם</p>
+      <p class="price">עלות ₪600</p>
+
+      <div class="buttons">
+        <button>קניית כרטיס</button>
+        <button>יצירת קשר</button>
+      </div>
+
+      <p class="footer">adelzaurov09@gmail.com “אדל הפקות” זכויות יוצרים של</p>
+    </div>
   </div>
 </body>
 </html>
