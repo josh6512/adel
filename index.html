@@ -130,9 +130,18 @@
       <p class="price">עלות ₪600</p>
 
       <div class="buttons">
-        <button>קניית כרטיס</button>
-        <button>יצירת קשר</button>
+        <button id="buyBtn" disabled style="opacity: 0.5; cursor: not-allowed;">קניית כרטיס</button>
+        <button onclick="enableBuy()">יצירת קשר</button>
       </div>
+      
+      <script>
+        function enableBuy() {
+          const btn = document.getElementById("buyBtn");
+          btn.disabled = false;
+          btn.style.opacity = "1";
+          btn.style.cursor = "pointer";
+        }
+      </script>
 
       <p class="footer">adelzaurov09@gmail.com “אדל הפקות” זכויות יוצרים של</p>
     </div>
