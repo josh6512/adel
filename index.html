@@ -59,6 +59,15 @@
     .after-party, .end, .price, .time, .location {
       font-size: 20px;
     }
+    .note {
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 25px;
+      margin-top: 60px;
+      color: #222;
+      display: block;
+   }
 
     .end span {
       font-weight: bold;
@@ -117,10 +126,6 @@
     <div class="header-image">
       <img src="background.jpg" alt="Save the Date">
     </div>
-    <div class="header-text">
-      <p class="header-sub">ZEITLIN PROM<br>02.07.2025</p>
-    </div>
-
     <div class="invite">
       <p class="time">21:00 פתיחת דלתות</p>
       <h1 class="title">“PAROS”</h1>
@@ -129,10 +134,13 @@
       <p class="end"><span>03:00 - סיום האירוע</span><br>הסעה מהמתחם</p>
       <p class="price">עלות ₪600</p>
 
+      <p class="note">יש להירשם לפני רכישת הכרטיס</p>
       <div class="buttons">
+        <a id="buyLink" href="https://www.bitpay.co.il/app/share-info?i=212370376271_19kPyNyX" class="btn disabled">
         <button id="buyBtn" disabled style="opacity: 0.5; cursor: not-allowed;">קניית כרטיס</button>
+        </a>
         <a href="https://docs.google.com/forms/d/1d3VZNWh4Nlvt0lGB9KV52PkmtqFJCytxrgEIM7bjN14/edit" onclick="enableBuy()" target="_blank">
-          <button>יצירת קשר</button>
+          <button>הרשמה </button>
         </a>
       </div>
       
@@ -145,7 +153,9 @@
         }
       </script>
 
-      <p class="footer">adelzaurov09@gmail.com “אדל הפקות” זכויות יוצרים של</p>
+      <p class="footer"> זכויות יוצרים "אדל הפקות"- adelzaurov09@gmail.com
+        
+      </p>
     </div>
   </div>
 </body>
